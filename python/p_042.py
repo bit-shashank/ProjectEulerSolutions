@@ -1,4 +1,4 @@
-myfile=open("p042_words.txt")
+myfile=open("data/p042_words.txt")
 contents=myfile.read()
 i=0
 word_list=contents.split(",")
@@ -20,6 +20,7 @@ for word in word_list:
 	if t in series_numbers:
 		traingle_words.append(word)
 		res=res+1
+		
 print("total triangle words are",res)
 
 
